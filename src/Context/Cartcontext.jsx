@@ -99,7 +99,7 @@ function updatecartCount(prodId,newCount){
 }
 
  useEffect(()=>{getLoggedusercart()},[])
-return <cartcontext.Provider value={{ wishlistcheck,setwishlistcheck,wishid,addwishlist,getLoggedtowishlist,removefromwishlist,addProductTowishlist,cartnumowner,cartnum,cartID,clearCart,getProducttocart,getLoggedusercart,deleteCartitem ,updatecartCount ,checkout}}>
+return <cartcontext.Provider value={{setcartnum, wishlistcheck,setwishlistcheck,wishid,addwishlist,getLoggedtowishlist,removefromwishlist,addProductTowishlist,cartnumowner,cartnum,cartID,clearCart,getProducttocart,getLoggedusercart,deleteCartitem ,updatecartCount ,checkout}}>
     {props.children}
 </cartcontext.Provider>
 }
