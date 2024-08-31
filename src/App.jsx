@@ -32,6 +32,8 @@ import Forgotpassword from './components/Forgotpassword/Forgotpassword.jsx'
 import Verifyresetcode from './components/Verifyresetcode/Verifyresetcode.jsx'
 import Resetpassword from './components/Resetpassword/Resetpassword.jsx'
 import WishlistcontextProvider from './Context/Wishlistcontext.jsx'
+import Freshcart from './components/Freshcart/Freshcart.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 
 
@@ -51,6 +53,8 @@ let x= createBrowserRouter([
      {path:'checkout',element:<ProtectedRouter><Checkout/></ProtectedRouter>},
      {path:'allorders',element:<ProtectedRouter><Allorders/></ProtectedRouter>},
      {path:'wishlist',element:<ProtectedRouter><Wishlist/></ProtectedRouter>},
+     {path:'freshcart',element:<ProtectedRouter><Freshcart/></ProtectedRouter>},
+     {path:'footer',element:<ProtectedRouter><Footer/></ProtectedRouter>},
     
    
     {path:'*',element:<Notfound/>}
